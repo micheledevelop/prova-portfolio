@@ -1,0 +1,17 @@
+.root{
+--colore1: #222222;
+
+}
+
+.body{
+    background-color: var(--colore1);
+    color: #ffff;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #00c6ff, #a200ff);
+    padding: 20px;
+}
