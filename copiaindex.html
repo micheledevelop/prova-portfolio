@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --colore1: #222222;
+            --sidebar-bg: purple;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: var(--colore1);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed; /* Resta fissa sul lato sinistro */
+            left: 0;
+            top: 0;
+            height: 100vh; /* Occupa tutta l'altezza della finestra */
+            width: 300px;
+            background-color: var(--sidebar-bg);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            overflow-y: auto; /* Scroll indipendente */
+        }
+
+        /* Per evitare che il contenuto della sidebar vada troppo attaccato */
+        .sidebar .content {
+            padding-bottom: 50px;
+        }
+
+        /* Profilo */
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pfp {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        /* Contenuto del sito (deve avere un margine a sinistra per non essere coperto dalla sidebar) */
+        .main-content {
+            margin-left: 320px; /* Lascia spazio alla sidebar */
+            padding: 20px;
+        }
+
+        /* Simuliamo una pagina lunga */
+        .main-content p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="content">
+            <div class="profile">
+                <div class="pfp"></div>
+                <h3>Il Tuo Nome</h3>
+            </div>
+            <p>Elemento 1</p>
+            <p>Elemento 2</p>
+            <p>Elemento 3</p>
+            <p>Elemento 4</p>
+            <p>Elemento 5</p>
+            <p>Elemento 6</p>
+            <p>Elemento 7</p>
+            <p>Elemento 8</p>
+            <p>Elemento 9</p>
+            <p>Elemento 10</p>
+            <p>Elemento 11</p>
+            <p>Elemento 12</p>
+            <p>Elemento 13</p>
+            <p>Elemento 14</p>
+            <p>Elemento 15</p>
+        </div>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <h1>Benvenuto nel mio Portfolio</h1>
+        <p>Qui troverai informazioni sui miei progetti e competenze.</p>
+        <p>Scorri verso il basso per vedere il contenuto.</p>
+        <p style="height: 2000px;">Testo lungo per simulare la lunghezza della pagina.</p>
+    </div>
+
+</body>
+</html>

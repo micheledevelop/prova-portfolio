@@ -1,17 +1,16 @@
-.root{
---colore1: #222222;
-
+:root{
+--colore1: #212224;
+--color2: #2b2e35;
 }
 
-.body{
-    background-color: var(--colore1);
-    color: #ffff;
+body,html{
+   background-color: var(--colore1);
 }
 
-.banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to right, #00c6ff, #a200ff);
-    padding: 20px;
+.sidebar{
+    position: fixed;
+    height: 97vh;
+    margin-left: 3px;
+    background-color: var(--color2);
+    width: 240px;
 }
