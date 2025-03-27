@@ -1,191 +1,242 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>portfolio</title>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --colore_principale: #1f1f29;
-                --colore_sidebar: #1f1f2b;
-                --colore_profilo: #24242f;
-                --colore_separè: #62626e2a;
-                --colore_schede: #2c2c37;
-                --colore_sottotitolo: #62626e;
-                --giallo: #ffc101;
-            }
+<html lang="it">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel = "stylesheet">
+    <style>
+        :root {
+            --colore_principale: #1f1f29;
+            --colore_sidebar: #1f1f2b;
+            --colore_profilo: #24242f;
+            --colore_separè: #62626e2a;
+            --colore_schede: #2c2c37;
+            --colore_sottotitolo: #62626e;
+            --giallo: #ffc101;
+            --colore_vuoto: #1b1d24;
+        }
 
-            body, html {
-                background-color: var(--colore_principale);
-                font-family: 'Poppins', sans-serif;
-                margin: 0;
-                padding: 0;
-            }
+        body, html {
+            background-color: var( --colore_principale );
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-            .menu-toggle{
-                display: none;
-            }
+        .sidebar {
+            position: fixed;
+            height: 98vh;
+            width: 230px;
+            background: linear-gradient( to bottom, #2c2c37 5%, #1f1f2b 47% );
+            margin-top: 4px;
+            margin-left: 6px;
+            box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );
+            overflow-y: auto;
+        }
 
-            .sidebar {
-                position: fixed;
-                height: 98vh;
-                background: linear-gradient(to bottom, #2c2c37 5%, #1f1f2b 47%);
-                width: 230px;
-                margin-top: 4px;
-                margin-left: 6px;
-                box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-                overflow-y: auto;
-                transition: transform 0.3s ease-in-out;
-            }
+        .profile {
+            height: 145px;
+            width: 100%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-            .profile {
-                height: 145px;
-                width: 100%;
-                padding-top: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+        .profile .profile_texts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-            .profile .profile_texts {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-            }
+        .profile .Title {
+            font-size: 12px;
+            color: #fff;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
 
-            .profile .Title {
-                font-size: 12px;
-                color: #ffff;
-                font-weight: 900;
-                margin-bottom: 8px;
-            }
+        .profile .Subtitle {
+            font-weight: 400;
+            font-size: 10px;
+            color: var( --colore_sottotitolo );
+            margin: 0;
+        }
 
-            .profile .Subtitle {
-                font-weight: 400;
-                font-size: 10px;
-                color: var(--colore_sottotitolo);
-                margin: 0;
-            }
+        .pfp {
+            background-color: var( --giallo );
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
 
-            .pfp {
-                background-color: var(--giallo);
-                height: 70px;
-                width: 70px;
-                border-radius: 50%;
-            }
+        .personal_informations {
+            padding: 20px 24px 10px;
+            display: flex;
+            flex-direction: column;
+        }
 
-            .personal_informations {
-                padding: 35px 24px 20px;
-                display: flex;
-                flex-direction: column;
-            }
+        .personal_box {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            padding: 2px 0px;
+        }
 
-            .personal_box {
-                justify-content: space-between;
-                display: flex;
-                flex-direction: row;
-                padding: 1px 0px;
-            }
+        .personal_a {
+            text-align: left;
+            color: #fff;
+            font-weight: 500;
+            font-size: 10px;
+        }
 
-            .personal_a {
-                text-align: left;
-                color: #ffff;
-                font-weight: 500;
-                font-size: 10px;
-            }
+        .personal_b {
+            text-align: right;
+            color: var( --colore_sottotitolo );
+            font-weight: 400;
+            font-size: 10px;
+        }
 
-            .personal_b {
-                text-align: right;
-                color: var(--colore_sottotitolo);
-                font-weight: 400;
-                font-size: 10px;
-            }
-            
-            .separè{
-                height: 1px;
-                width: 100%;
-                border: none;
-                background-color: var(--colore_separè);
-                margin-top: 15px;
-            }
+        .separè {
+            height: 1px;
+            width: 100%;
+            background-color: var( --colore_separè );
+            margin-top: 15px;
+            border: none;
+        }
 
+        .languages{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0px 30px;
+            margin-left: 5px;
+        }
 
-            /* Design da Mobile*/
-            @media screen and (max-width: 600px) {
-                .sidebar {
-                    transform: translateX(-100%);
-                    width: 200px;
-                    height: 100vh;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-                }
+        .linguistic-knowledge {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            padding: 0px 5px;
+        }
 
-                .content {
-                    margin-left: 0;
-                }
+        .circle-container {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
 
-                .menu-toggle {
-                    display: block;
-                    position: fixed;
-                    top: 10px;
-                    left: 10px;
-                    background-color: var(--giallo);
-                    color: black;
-                    border: none;
-                    font-size: 20px;
-                    padding: 10px;
-                    cursor: pointer;
-                    z-index: 100;
-                }
+        .svg-container {
+            transform: rotate( -90deg );
+            width: 100%;
+            height: 100%;
+        }
 
-                .sidebar.open {
-                    transform: translateX(0);
-                }
-            }
-    
-        </style>    
-    </head>
-    <body>
-            <!-- Bottone sidebar mobile-->
-            <button class = "menu-toggle" onclick="Sidebar()">></button>
-        
-            <!-- Sidebar -->
-            <div class = "sidebar" id = "sidebar">
-                <div class = "profile">
-                    <div class = "pfp"></div>
-                    <div class = "profile_texts">
-                        <p class = "Title">Michele Latte</p>
-                        <p class = "Subtitle">Front-end Developer</p>
-                        <p class = "Subtitle">Web Design</p>
-                    </div>    
-                </div>
-                <div class = "personal_informations">
-                    <div class = "personal_box">
-                        <span class = "personal_a">Stato:</span>
-                        <span class = "personal_b">Italia</span>
-                    </div>
-                    <div class = "personal_box">
-                        <span class = "personal_a">Città:</span>
-                        <span class = "personal_b">Nuoro</span>
-                    </div>
-                    <div class = "personal_box">
-                        <span class = "personal_a">Età:</span>
-                        <span class = "personal_b">20</span>    
-                    </div>
-                <hr class = "separè">
-                </div>
+        .circle-void-part {
+            fill: transparent;
+            stroke: var( --colore_vuoto );
+            stroke-width: 3;
+        }
+
+        .circle-yellow-part {
+            fill: transparent;
+            stroke: var( --giallo );
+            stroke-width: 3;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.5s ease-in-out;
+        }
+
+        .circle-value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+            font-size: 10px;
+            color: var(--colore_sottotitolo);
+            font-weight: 400;
+        }
+
+        .language-name{
+            color: #fff;
+            font-weight: 500;
+            font-size: 10px;
+        }
+    </style>    
+</head>
+<body>
+
+    <div class = "sidebar">
+        <div class = "profile">
+            <div class = "pfp"></div>
+            <div class = "profile_texts">
+                <p class = "Title">Michele Latte</p>
+                <p class = "Subtitle">Front-end Developer</p>
+                <p class = "Subtitle">Web Design</p>
+            </div>    
+        </div>
+
+        <div class = "personal_informations">
+            <div class = "personal_box">
+                <span class = "personal_a">Stato:</span>
+                <span class = "personal_b">Italia</span>
             </div>
-        </body>
-        
-</html>
+            <div class = "personal_box">
+                <span class = "personal_a">Città:</span>
+                <span class = "personal_b">Nuoro</span>
+            </div>
+            <div class = "personal_box">
+                <span class = "personal_a">Età:</span>
+                <span class = "personal_b">20</span>    
+            </div>
+            <hr class = "separè">
+        </div>
 
-<script>
-    function Sidebar() {
-        document.getElementById("sidebar").classList.toggle("open");
-    }
-</script>
+        <div class = "languages">
+            <div class = "linguistic-knowledge">
+                <div class = "circle-container">
+                    <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                        <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                        <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                    </svg>
+                    <div class = "circle-value">100%</div>
+                </div>
+                <div class="language-name">Italiano</div>
+            </div>
+            <div class = "linguistic-knowledge">
+                <div class = "circle-container">
+                    <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                        <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                        <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                    </svg>
+                    <div class = "circle-value">90%</div>
+                </div>
+                <div class="language-name">Inglese</div>
+            </div>
+            <div class = "linguistic-knowledge">
+                <div class = "circle-container">
+                    <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                        <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                        <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                    </svg>
+                    <div class = "circle-value">50%</div>
+                </div>
+                <div class="language-name">Spagnolo</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll( '.circle-yellow-part' ).forEach( ( circle, index ) => {
+            const values = [ 100, 90, 50];
+            const radius = circle.r.baseVal.value;
+            const circumference = 2 * Math.PI * radius;
+            circle.style.strokeDasharray = `${circumference} ${circumference}`;
+            circle.style.strokeDashoffset = circumference - ( values[index] / 100 ) * circumference;
+        } );
+    </script>
+
+</body>
+</html>
