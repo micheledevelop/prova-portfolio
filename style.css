@@ -6,10 +6,11 @@
     --colore_schede: #2c2c37;
     --colore_sottotitolo: #62626e;
     --giallo: #ffc101;
+    --colore_vuoto: #1b1d24;
 }
 
 body, html {
-    background-color: var(--colore_principale);
+    background-color: var( --colore_principale );
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -18,17 +19,15 @@ body, html {
 .menu-toggle{
     display: none;
 }
-
 .sidebar {
     position: fixed;
     height: 98vh;
-    background: linear-gradient(to bottom, #2c2c37 5%, #1f1f2b 47%);
     width: 230px;
+    background: linear-gradient( to bottom, #2c2c37 5%, #1f1f2b 47% );
     margin-top: 4px;
     margin-left: 6px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );
     overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
 }
 
 .profile {
@@ -45,12 +44,11 @@ body, html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
 }
 
 .profile .Title {
     font-size: 12px;
-    color: #ffff;
+    color: #fff;
     font-weight: 900;
     margin-bottom: 8px;
 }
@@ -58,19 +56,19 @@ body, html {
 .profile .Subtitle {
     font-weight: 400;
     font-size: 10px;
-    color: var(--colore_sottotitolo);
+    color: var( --colore_sottotitolo );
     margin: 0;
 }
 
 .pfp {
-    background-color: var(--giallo);
+    background-color: var( --giallo );
     height: 70px;
     width: 70px;
     border-radius: 50%;
 }
 
 .personal_informations {
-    padding: 35px 24px 20px;
+    padding: 20px 24px 8px;
     display: flex;
     flex-direction: column;
 }
@@ -79,29 +77,144 @@ body, html {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    padding: 1px 0px;
+    padding: 2px 0px;
 }
 
 .personal_a {
     text-align: left;
-    color: #ffff;
+    color: #fff;
     font-weight: 500;
     font-size: 10px;
 }
 
 .personal_b {
     text-align: right;
-    color: var(--colore_sottotitolo);
+    color: var( --colore_sottotitolo );
     font-weight: 400;
     font-size: 10px;
 }
 
-.separè{
+.separè {
     height: 1px;
-    width: 100%;
-    border: none;
-    background-color: var(--colore_separè);
+    width: 80%;
+    background-color: var( --colore_separè );
     margin-top: 15px;
+    margin-left: 24px;
+    border: none;
+}
+
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.linguistic-knowledge {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 0px 5px;
+}
+
+.circle-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.svg-container {
+    transform: rotate( -90deg );
+    width: 100%;
+    height: 100%;
+}
+
+.circle-void-part {
+    fill: transparent;
+    stroke: var( --colore_vuoto );
+    stroke-width: 3;
+}
+
+.circle-yellow-part {
+    fill: transparent;
+    stroke: var( --giallo );
+    stroke-width: 3;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.circle-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-size: 10px;
+    color: var(--colore_sottotitolo);
+    font-weight: 400;
+}
+
+.language-name{
+    padding-left: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.programming-knowledge{
+    width: 80%;
+    margin-left: 24px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.programming-language-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.programming-language-name {
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.programming-language-knowledge {
+    text-align: right;
+    color: var( --colore_sottotitolo );
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.programming-progress-bar{
+    height: 4px;
+    margin-top: -8px;
+    margin-bottom: 26px;
+}
+
+.progress-bar {
+    margin-top: 0px;
+    width: 100%;
+    height: 4px;
+}
+
+.void-bar {
+    fill: var(--colore_vuoto); 
+    rx: 2;
+    ry: 2;
+}
+
+.yellow-bar {
+    fill: var(--giallo);    
+    rx: 2;
+    ry: 2;
 }
 
 
