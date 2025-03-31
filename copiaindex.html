@@ -253,14 +253,11 @@
                 background-color: var(--colore_profilo);
                 width: 230px;
             }
-            .contact{
-                
-            }
 
             /* Design da Mobile*/
             @media screen and (max-width: 600px) {
                 .sidebar {
-                    transform: translateX(-100%);
+                    transform: translateX(-240px);
                     width: 200px;
                     height: 100vh;
                     position: fixed;
@@ -299,7 +296,7 @@
         <button class = "menu-toggle" onclick = "Sidebar()">></button>
 
         <!-- Sidebar -->
-        <div class = "sidebar">
+        <div class = "sidebar" id = "sidebar">
             <div class="sidebar-main">
                 <div class = "profile">
                     <div class = "pfp"></div>
