@@ -8,124 +8,144 @@
         <link rel = "stylesheet" href = "style.css">    
     </head>
     <body>
-
         <!-- Bottone sidebar mobile-->
         <button class = "menu-toggle" onclick = "Sidebar()">></button>
-        
+
         <!-- Sidebar -->
-        <div class = "sidebar" id = "sidebar">
-            <div class = "profile">
-                <div class = "pfp"></div>
-                <div class = "profile_texts">
-                    <p class = "Title">Michele Latte</p>
-                    <p class = "Subtitle">Front-end Developer</p>
-                    <p class = "Subtitle">Web Design</p>
-                </div>    
+        <div class = "sidebar">
+            <div class="sidebar-main">
+                <div class = "profile">
+                    <div class = "pfp"></div>
+                    <div class = "profile_texts">
+                        <p class = "Title">Michele Latte</p>
+                        <p class = "Subtitle">Front-end Developer</p>
+                        <p class = "Subtitle">Web Design</p>
+                    </div>    
+                </div>
+
+                <div class = "personal_informations">
+                    <div class = "personal_box">
+                        <span class = "personal_a">Stato:</span>
+                        <span class = "personal_b">Italia</span>
+                    </div>
+                    <div class = "personal_box">
+                        <span class = "personal_a">Città:</span>
+                        <span class = "personal_b">Nuoro</span>
+                    </div>
+                    <div class = "personal_box">
+                        <span class = "personal_a">Età:</span>
+                        <span class = "personal_b">20</span>    
+                    </div>    
+                </div>
+
+                <hr class = "separè">
+                <div class = "languages">
+                    <div class = "linguistic-knowledge">
+                        <div class = "circle-container">
+                            <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                                <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                                <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                            </svg>
+                            <div class = "circle-value">100%</div>
+                        </div>
+                        <div class = "language-name">Italiano</div>
+                    </div>
+                    <div class = "linguistic-knowledge">
+                        <div class = "circle-container">
+                            <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                                <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                                <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                            </svg>
+                            <div class = "circle-value">90%</div>
+                        </div>
+                        <div class = "language-name">Inglese</div>
+                    </div>
+                    <div class = "linguistic-knowledge">
+                        <div class = "circle-container">
+                            <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                                <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                                <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                            </svg>
+                            <div class = "circle-value">50%</div>
+                        </div>
+                        <div class = "language-name">Spagnolo</div>
+                    </div>    
+                </div>
+
+                <hr class = "separè">
+                <div class = "programming-knowledge">
+                    <div class = "programming-language-info">
+                        <span class = "programming-language-name">html</span>
+                        <span class = "programming-language-knowledge">100%</span>
+                    </div>
+                    <div class="programming-progress-bar">
+                        <svg class="progress-bar" width="100%" height="3">
+                            <rect class="void-bar" width="100%" height="3"></rect>
+                            <rect class="yellow-bar" width="100%" height="3"></rect>
+                        </svg>
+                    </div>
+                    <div class = "programming-language-info">
+                        <span class = "programming-language-name">CSS</span>
+                        <span class = "programming-language-knowledge">90%</span>
+                    </div>
+                    <div class="programming-progress-bar">
+                        <svg class="progress-bar" width="100%" height="3">
+                            <rect class="void-bar" width="100%" height="3"></rect>
+                            <rect class="yellow-bar" width="90%" height="3"></rect>
+                        </svg>
+                    </div>
+                    <div class = "programming-language-info">
+                        <span class = "programming-language-name">Js</span>
+                        <span class = "programming-language-knowledge">70%</span>
+                    </div>
+                    <div class="programming-progress-bar">
+                        <svg class="progress-bar" width="100%" height="3">
+                            <rect class="void-bar" width="100%" height="3"></rect>
+                            <rect class="yellow-bar" width="70%" height="3"></rect>
+                        </svg>
+                    </div>
+                    <div class = "programming-language-info">
+                        <span class = "programming-language-name">C++</span>
+                        <span class = "programming-language-knowledge">80%</span>
+                    </div>
+                    <div class="programming-progress-bar">
+                        <svg class="progress-bar" width="100%" height="3">
+                            <rect class="void-bar" width="100%" height="3"></rect>
+                            <rect class="yellow-bar" width="80%" height="3"></rect>
+                        </svg>
+                    </div>
+                    <div class = "programming-language-info">
+                        <span class = "programming-language-name">PHP</span>
+                        <span class = "programming-language-knowledge">65%</span>
+                    </div>
+                    <div class="programming-progress-bar">
+                        <svg class="progress-bar" width="100%" height="3">
+                            <rect class="void-bar" width="100%" height="3"></rect>
+                            <rect class="yellow-bar" width="65%" height="3"></rect>
+                        </svg>
+                    </div>   
+                </div>
             </div>
 
-            <div class = "personal_informations">
-                <div class = "personal_box">
-                    <span class = "personal_a">Stato:</span>
-                    <span class = "personal_b">Italia</span>
-                </div>
-                <div class = "personal_box">
-                    <span class = "personal_a">Città:</span>
-                    <span class = "personal_b">Nuoro</span>
-                </div>
-                <div class = "personal_box">
-                    <span class = "personal_a">Età:</span>
-                    <span class = "personal_b">20</span>    
-                </div>    
-            </div>
-
-            <hr class = "separè">
-            <div class = "languages">
-                <div class = "linguistic-knowledge">
-                    <div class = "circle-container">
-                        <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
-                            <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
-                            <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
-                        </svg>
-                        <div class = "circle-value">100%</div>
-                    </div>
-                    <div class = "language-name">Italiano</div>
-                </div>
-                <div class = "linguistic-knowledge">
-                    <div class = "circle-container">
-                        <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
-                            <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
-                            <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
-                        </svg>
-                        <div class = "circle-value">90%</div>
-                    </div>
-                    <div class = "language-name">Inglese</div>
-                </div>
-                <div class = "linguistic-knowledge">
-                    <div class = "circle-container">
-                        <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
-                            <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
-                            <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
-                        </svg>
-                        <div class = "circle-value">50%</div>
-                    </div>
-                    <div class = "language-name">Spagnolo</div>
-                </div>    
-            </div>
-
-            <hr class = "separè">
-            <div class = "programming-knowledge">
-                <div class = "programming-language-info">
-                    <span class = "programming-language-name">html</span>
-                    <span class = "programming-language-knowledge">100%</span>
-                </div>
-                <div class = "programming-progress-bar">
-                    <svg class = "progress-bar" width = "100%" height = "3">
-                        <rect class = "void-bar" width = "100%" height = "3"></rect>
-                        <rect class = "yellow-bar" width = "100%" height = "3"></rect>
-                    </svg>
-                </div>
-                <div class = "programming-language-info">
-                    <span class = "programming-language-name">CSS</span>
-                    <span class = "programming-language-knowledge">90%</span>
-                </div>
-                <div class = "programming-progress-bar">
-                    <svg class = "progress-bar" width = "100%" height = "3">
-                        <rect class = "void-bar" width = "100%" height = "3"></rect>
-                        <rect class = "yellow-bar" width = "90%" height = "3"></rect>
-                    </svg>
-                </div>
-                <div class = "programming-language-info">
-                    <span class = "programming-language-name">Js</span>
-                    <span class = "programming-language-knowledge">70%</span>
-                </div>
-                <div class = "programming-progress-bar">
-                    <svg class = "progress-bar" width = "100%" height = "3">
-                        <rect class = "void-bar" width = "100%" height = "3"></rect>
-                        <rect class = "yellow-bar" width = "70%" height = "3"></rect>
-                    </svg>
-                </div>
-                <div class = "programming-language-info">
-                    <span class = "programming-language-name">C++</span>
-                    <span class = "programming-language-knowledge">80%</span>
-                </div>
-                <div class = "programming-progress-bar">
-                    <svg class = "progress-bar" width = "100%" height = "3">
-                        <rect class = "void-bar" width = "100%" height = "3"></rect>
-                        <rect class = "yellow-bar" width = "80%" height = "3"></rect>
-                    </svg>
-                </div>
-                <div class = "programming-language-info">
-                    <span class = "programming-language-name">PHP</span>
-                    <span class = "programming-language-knowledge">65%</span>
-                </div>
-                <div class = "programming-progress-bar">
-                    <svg class = "progress-bar" width = "100%" height = "3">
-                        <rect class = "void-bar" width = "100%" height = "3"></rect>
-                        <rect class = "yellow-bar" width = "65%" height = "3"></rect>
-                    </svg>
-                </div>   
+            <div class="sidebar-footer">
+                <button id="instagram">
+                    <svg width="20px" height="20px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#62626e"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#62626e"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#62626e"></path> </g></svg>
+                </button>
+                <button id="gitHub">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#62626e" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#62626e]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#62626e"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#62626e]"> </path> </g> </g> </g> </g></svg>
+                </button>
+                <button id="fiverr">
+                    <svg width="20px" height="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 0h192v192H0z" style="fill:none"></path><path d="M121.1 170h34.75V67.04H90.21v-7.72s0-9.01 9.01-9.01h21.88V22H99.22s-43.76 0-43.76 37.32v7.72h-19.3v28.31h19.3v74.64h34.75V95.36h30.89V170Z" style="stroke:#62626e;stroke-linejoin:round;stroke-width:12px;fill:none"></path></g></svg>
+                </button>
+                <button id="gmail">
+                    <svg width="20px" height="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#62626e" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"></path></g></svg>
+                </button>   
+                <button id="linkedin">
+                    <svg fill="#62626e" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z" fill-rule="evenodd"></path> </g></svg>            </div>
+                </button> 
             </div>
         </div>
+           
     </body>
 </html>
 <script src = "script.js"></script>

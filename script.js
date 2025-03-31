@@ -10,3 +10,28 @@ document.querySelectorAll( '.circle-yellow-part' ).forEach( ( circle, index ) =>
     circle.style.strokeDasharray = `${circumference} ${circumference}`;
     circle.style.strokeDashoffset = circumference - ( values[index] / 100 ) * circumference;
 } );
+
+//collegamenti footer
+document.getElementById("instagram").addEventListener("click", function() {
+    window.open("https://www.instagram.com/michele_latte_", "_blank");
+});
+
+document.getElementById("gitHub").addEventListener("click", function() {
+    window.open("https://github.com/micheledevelop", "_blank");
+});
+
+document.getElementById("fiverr").addEventListener("click", function() {
+    window.open("https://fiverr.com/s/xX5r5BD", "_blank");
+});
+
+document.getElementById("gmail").addEventListener("click", function() {
+    var email = "michelelatte.dev@gmail.com";
+    var subject = "Creazione/modifica di un sito web";
+    var body = "Ciao, mi piacerebbe sapere di più riguardo ai servizi che offri.";
+    var gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailUrl, '_blank');
+});
+
+document.getElementById("linkedin").addEventListener("click", function() {
+    window.open("https://www.linkedin.com/in/michele-michele-811a56359/", "_blank");
+});

@@ -15,18 +15,38 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
+button{
+    background: transparent;
+    border: none;
+}
 .menu-toggle{
     display: none;
 }
-.sidebar {
+
+.sidebar{
     position: fixed;
+    display: flex;
+    flex-direction: column;
     height: 98vh;
     width: 230px;
-    background: linear-gradient( to bottom, #2c2c37 5%, #1f1f2b 47% );
     margin-top: 4px;
     margin-left: 6px;
-    box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );
+    box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );    
+}
+.sidebar ::-webkit-scrollbar {
+    width: 5px;    
+}
+
+.sidebar ::-webkit-scrollbar-thumb {
+    background: var(--colore_sottotitolo); /* Colore della barra di scorrimento */
+    border-radius: 5px;
+}
+
+
+.sidebar-main {
+    height: 92vh;
+    width: 230px;
+    background: linear-gradient( to bottom, #2c2c37 5%, #1f1f2b 47% );
     overflow-y: auto;
 }
 
@@ -217,6 +237,17 @@ body, html {
     ry: 2;
 }
 
+.sidebar-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 6vh;
+    background-color: var(--colore_profilo);
+    width: 230px;
+}
+.contact{
+    
+}
 
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {
