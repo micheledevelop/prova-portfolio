@@ -15,6 +15,12 @@ body, html {
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
 button{
     background: transparent;
     border: none;
@@ -31,7 +37,8 @@ button{
     width: 230px;
     margin-top: 4px;
     margin-left: 6px;
-    box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );    
+    box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );   
+    overflow-x: hidden; 
 }
 .sidebar ::-webkit-scrollbar {
     width: 5px;    
@@ -245,9 +252,7 @@ button{
     background-color: var(--colore_profilo);
     width: 230px;
 }
-.contact{
-    
-}
+
 
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {

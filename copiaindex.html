@@ -23,6 +23,19 @@
                 margin: 0;
                 padding: 0;
             }
+
+            .white-text{
+                color: #fff;
+                font-weight: 500;
+                font-size: 10px;
+            }
+
+            .Subtitle-text{
+                font-weight: 400;
+                font-size: 10px;
+                color: var( --colore_sottotitolo );
+            }
+
             button{
                 background: transparent;
                 border: none;
@@ -37,9 +50,9 @@
                 flex-direction: column;
                 height: 98vh;
                 width: 230px;
-                margin-top: 4px;
                 margin-left: 6px;
-                box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );    
+                box-shadow: 2px 0 10px rgba( 0, 0, 0, 0.2 );
+                z-index: 10;    
             }
             .sidebar ::-webkit-scrollbar {
                 width: 5px;    
@@ -51,7 +64,7 @@
             }
 
             
-            .sidebar-main {
+            .sidebar-body {
                 height: 92vh;
                 width: 230px;
                 background: linear-gradient( to bottom, #2c2c37 5%, #1f1f2b 47% );
@@ -74,6 +87,7 @@
                 text-align: center;
             }
 
+
             .profile .Title {
                 font-size: 12px;
                 color: #fff;
@@ -81,10 +95,8 @@
                 margin-bottom: 8px;
             }
 
-            .profile .Subtitle {
-                font-weight: 400;
-                font-size: 10px;
-                color: var( --colore_sottotitolo );
+            .profile .Subtitle-text {
+                
                 margin: 0;
             }
 
@@ -101,24 +113,23 @@
                 flex-direction: column;
             }
 
-            .personal_box {
+            .personal-box {
                 justify-content: space-between;
                 display: flex;
                 flex-direction: row;
                 padding: 2px 0px;
             }
 
-            .personal_a {
+            
+            
+
+            .personal_-box .white-text {
                 text-align: left;
-                color: #fff;
-                font-weight: 500;
-                font-size: 10px;
+                
             }
 
-            .personal_b {
-                text-align: right;
-                color: var( --colore_sottotitolo );
-                font-weight: 400;
+            .personal-box .Subtitle-text{
+               
                 font-size: 10px;
             }
 
@@ -184,11 +195,8 @@
                 font-weight: 400;
             }
 
-            .language-name{
+            .linguistic-knowledge .white-text{
                 padding-left: 5px;
-                color: #fff;
-                font-weight: 500;
-                font-size: 10px;
             }
 
             .programming-knowledge{
@@ -207,18 +215,13 @@
                 margin-bottom: 0px;
             }
 
-            .programming-language-name {
+            .programming-knowledge .white-text {
                 text-align: left;
-                color: #fff;
-                font-weight: 500;
-                font-size: 10px;
+                
             }
 
-            .programming-language-knowledge {
-                text-align: right;
-                color: var( --colore_sottotitolo );
-                font-weight: 400;
-                font-size: 10px;
+            .programming-knowledge .Subtitle-text{
+                text-align: right;    
             }
             
             .programming-progress-bar{
@@ -252,6 +255,27 @@
                 height: 6vh;
                 background-color: var(--colore_profilo);
                 width: 230px;
+            }
+
+            .main-section{
+                z-index: 1;
+                height: 98vh;
+                margin-left: 260px;
+                margin-top: 6px;
+                margin-right: 10px;
+            }
+
+            .main-picture{
+                background-color: var(--giallo);
+                width: 100%;
+                height :48.7vh;
+            }
+
+            .main-text-banner{
+                display: flex;
+                flex-direction: row;
+                margin-top: 16px;
+                justify-content: space-around;
             }
 
             /* Design da Mobile*/
@@ -297,28 +321,28 @@
 
         <!-- Sidebar -->
         <div class = "sidebar" id = "sidebar">
-            <div class="sidebar-main">
+            <div class="sidebar-body">
                 <div class = "profile">
                     <div class = "pfp"></div>
                     <div class = "profile_texts">
                         <p class = "Title">Michele Latte</p>
-                        <p class = "Subtitle">Front-end Developer</p>
-                        <p class = "Subtitle">Web Design</p>
+                        <p class = "Subtitle-text">Front-end Developer</p>
+                        <p class = "Subtitle-text">Web Design</p>
                     </div>    
                 </div>
 
                 <div class = "personal_informations">
-                    <div class = "personal_box">
-                        <span class = "personal_a">Stato:</span>
-                        <span class = "personal_b">Italia</span>
+                    <div class = "personal-box">
+                        <span class = "white-text">Stato:</span>
+                        <span class = "Subtitle-text">Italia</span>
                     </div>
-                    <div class = "personal_box">
-                        <span class = "personal_a">Città:</span>
-                        <span class = "personal_b">Nuoro</span>
+                    <div class = "personal-box">
+                        <span class = "white-text">Città:</span>
+                        <span class = "Subtitle-text">Nuoro</span>
                     </div>
-                    <div class = "personal_box">
-                        <span class = "personal_a">Età:</span>
-                        <span class = "personal_b">20</span>    
+                    <div class = "personal-box">
+                        <span class = "white-text">Età:</span>
+                        <span class = "Subtitle-text">20</span>    
                     </div>    
                 </div>
 
@@ -332,7 +356,7 @@
                             </svg>
                             <div class = "circle-value">100%</div>
                         </div>
-                        <div class = "language-name">Italiano</div>
+                        <div class = "white-text">Italiano</div>
                     </div>
                     <div class = "linguistic-knowledge">
                         <div class = "circle-container">
@@ -342,7 +366,7 @@
                             </svg>
                             <div class = "circle-value">90%</div>
                         </div>
-                        <div class = "language-name">Inglese</div>
+                        <div class = "white-text">Inglese</div>
                     </div>
                     <div class = "linguistic-knowledge">
                         <div class = "circle-container">
@@ -352,15 +376,15 @@
                             </svg>
                             <div class = "circle-value">50%</div>
                         </div>
-                        <div class = "language-name">Spagnolo</div>
+                        <div class = "white-text">Spagnolo</div>
                     </div>    
                 </div>
 
                 <hr class = "separè">
                 <div class = "programming-knowledge">
                     <div class = "programming-language-info">
-                        <span class = "programming-language-name">html</span>
-                        <span class = "programming-language-knowledge">100%</span>
+                        <span class = "white-text">html</span>
+                        <span class = "Subtitle-text">100%</span>
                     </div>
                     <div class="programming-progress-bar">
                         <svg class="progress-bar" width="100%" height="3">
@@ -369,8 +393,8 @@
                         </svg>
                     </div>
                     <div class = "programming-language-info">
-                        <span class = "programming-language-name">CSS</span>
-                        <span class = "programming-language-knowledge">90%</span>
+                        <span class = "white-text">CSS</span>
+                        <span class = "Subtitle-text">90%</span>
                     </div>
                     <div class="programming-progress-bar">
                         <svg class="progress-bar" width="100%" height="3">
@@ -379,8 +403,8 @@
                         </svg>
                     </div>
                     <div class = "programming-language-info">
-                        <span class = "programming-language-name">Js</span>
-                        <span class = "programming-language-knowledge">70%</span>
+                        <span class = "white-text">Js</span>
+                        <span class = "Subtitle-text">70%</span>
                     </div>
                     <div class="programming-progress-bar">
                         <svg class="progress-bar" width="100%" height="3">
@@ -389,8 +413,8 @@
                         </svg>
                     </div>
                     <div class = "programming-language-info">
-                        <span class = "programming-language-name">C++</span>
-                        <span class = "programming-language-knowledge">80%</span>
+                        <span class = "white-text">C++</span>
+                        <span class = "Subtitle-text">80%</span>
                     </div>
                     <div class="programming-progress-bar">
                         <svg class="progress-bar" width="100%" height="3">
@@ -399,8 +423,8 @@
                         </svg>
                     </div>
                     <div class = "programming-language-info">
-                        <span class = "programming-language-name">PHP</span>
-                        <span class = "programming-language-knowledge">65%</span>
+                        <span class = "white-text">PHP</span>
+                        <span class = "Subtitle-text">65%</span>
                     </div>
                     <div class="programming-progress-bar">
                         <svg class="progress-bar" width="100%" height="3">
@@ -428,6 +452,19 @@
                     <svg fill="#62626e" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z" fill-rule="evenodd"></path> </g></svg>            </div>
         </div>
 
+        <!--sezione principale del sito-->
+        <div class = "main-section">
+            <div class="main-picture">
+
+            </div>
+        <!--SECTION PROVVISORIA PERCHè NON HO UN BUON NUMERO DI CLIENTI SODDISFATTI, PROGETTI CONCLUSI ECC.-->
+            <div class = "main-text-banner">
+                <p class = "white-text">Soluzioni su misura</p>
+                <p class = "white-text">Progetti sempre in crescita</p>
+                <p class = "white-text">Clienti al centro di tutto</p>
+                <p class = "white-text">Sempre in aggiornamento </p>
+            </div>
+        </div>
         <script>
             //bottone per far apparire la sidebar da mobile
             function Sidebar() {
