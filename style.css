@@ -253,12 +253,6 @@ button{
 @media screen and (max-width: 600px) {
     .sidebar {
         transform: translateX(-50vh);
-        width: 200px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .content {
