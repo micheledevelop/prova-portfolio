@@ -1,3 +1,4 @@
+//bottone per far apparire la sidebar da mobile
 function Sidebar() {
     document.getElementById("sidebar").classList.toggle("open");
 }
