@@ -33,6 +33,6 @@ document.getElementById("gmail").addEventListener("click", function() {
     window.open(gmailUrl, '_blank');
 });
 
-document.getElementById("linkedin").addEventListener("click", function() {
-    window.open("https://www.linkedin.com/in/michele-michele-811a56359/", "_blank");
+document.getElementById("ifthenelse").addEventListener("click", function() {
+    window.open("https://ifthenelse.netlify.app/", "_blank");
 });
