@@ -8,188 +8,203 @@
         <link rel = "stylesheet" href = "style.css">    
     </head>
     <body>
-        <!-- Bottone sidebar mobile-->
-        <button class = "menu-toggle" onclick = "Sidebar()">></button>
+         <!-- Bottone sidebar mobile-->
+         <button class = "menu-toggle" onclick = "Sidebar()">></button>
 
-        <!-- Sidebar -->
-        <div class = "sidebar" id = "sidebar">
-            <div class="sidebar-body">
-                <div class = "profile">
-                    <div class = "pfp"></div>
-                    <div class = "profile_texts">
-                        <p class = "Title">Michele Latte</p>
-                        <p class = "Subtitle-text">Front-end Developer</p>
-                        <p class = "Subtitle-text">Web Design</p>
-                    </div>    
-                </div>
-
-                <div class = "personal_informations">
-                    <div class = "personal-box">
-                        <span class = "white-text">Stato:</span>
-                        <span class = "Subtitle-text">Italia</span>
-                    </div>
-                    <div class = "personal-box">
-                        <span class = "white-text">Città:</span>
-                        <span class = "Subtitle-text">Nuoro</span>
-                    </div>
-                    <div class = "personal-box">
-                        <span class = "white-text">Età:</span>
-                        <span class = "Subtitle-text">20</span>    
-                    </div>    
-                </div>
-
-                <hr class = "separè">
-                <div class = "languages">
-                    <div class = "linguistic-knowledge">
-                        <div class = "circle-container">
-                            <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
-                                <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
-                                <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
-                            </svg>
-                            <div class = "circle-value">100%</div>
-                        </div>
-                        <div class = "white-text">Italiano</div>
-                    </div>
-                    <div class = "linguistic-knowledge">
-                        <div class = "circle-container">
-                            <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
-                                <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
-                                <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
-                            </svg>
-                            <div class = "circle-value">90%</div>
-                        </div>
-                        <div class = "white-text">Inglese</div>
-                    </div>
-                    <div class = "linguistic-knowledge">
-                        <div class = "circle-container">
-                            <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
-                                <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
-                                <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
-                            </svg>
-                            <div class = "circle-value">50%</div>
-                        </div>
-                        <div class = "white-text">Spagnolo</div>
-                    </div>    
-                </div>
-
-                <hr class = "separè">
-                <div class = "programming-knowledge">
-                    <div class = "programming-language-info">
-                        <span class = "white-text">html</span>
-                        <span class = "Subtitle-text">100%</span>
-                    </div>
-                    <div class="programming-progress-bar">
-                        <svg class="progress-bar" width="100%" height="3">
-                            <rect class="void-bar" width="100%" height="3"></rect>
-                            <rect class="yellow-bar" width="100%" height="3"></rect>
-                        </svg>
-                    </div>
-                    <div class = "programming-language-info">
-                        <span class = "white-text">CSS</span>
-                        <span class = "Subtitle-text">90%</span>
-                    </div>
-                    <div class="programming-progress-bar">
-                        <svg class="progress-bar" width="100%" height="3">
-                            <rect class="void-bar" width="100%" height="3"></rect>
-                            <rect class="yellow-bar" width="90%" height="3"></rect>
-                        </svg>
-                    </div>
-                    <div class = "programming-language-info">
-                        <span class = "white-text">Js</span>
-                        <span class = "Subtitle-text">70%</span>
-                    </div>
-                    <div class="programming-progress-bar">
-                        <svg class="progress-bar" width="100%" height="3">
-                            <rect class="void-bar" width="100%" height="3"></rect>
-                            <rect class="yellow-bar" width="70%" height="3"></rect>
-                        </svg>
-                    </div>
-                    <div class = "programming-language-info">
-                        <span class = "white-text">C++</span>
-                        <span class = "Subtitle-text">80%</span>
-                    </div>
-                    <div class="programming-progress-bar">
-                        <svg class="progress-bar" width="100%" height="3">
-                            <rect class="void-bar" width="100%" height="3"></rect>
-                            <rect class="yellow-bar" width="80%" height="3"></rect>
-                        </svg>
-                    </div>
-                    <div class = "programming-language-info">
-                        <span class = "white-text">PHP</span>
-                        <span class = "Subtitle-text">65%</span>
-                    </div>
-                    <div class="programming-progress-bar">
-                        <svg class="progress-bar" width="100%" height="3">
-                            <rect class="void-bar" width="100%" height="3"></rect>
-                            <rect class="yellow-bar" width="65%" height="3"></rect>
-                        </svg>
-                    </div>   
-                </div>
-            </div>
-
-            <div class="sidebar-footer">
-                <button id="instagram">
-                    <svg width="20px" height="20px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#62626e"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#62626e"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#62626e"></path> </g></svg>
-                </button>
-                <button id="gitHub">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#62626e" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#62626e]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#62626e"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#62626e]"> </path> </g> </g> </g> </g></svg>
-                </button>
-                <button id="fiverr">
-                    <svg width="20px" height="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 0h192v192H0z" style="fill:none"></path><path d="M121.1 170h34.75V67.04H90.21v-7.72s0-9.01 9.01-9.01h21.88V22H99.22s-43.76 0-43.76 37.32v7.72h-19.3v28.31h19.3v74.64h34.75V95.36h30.89V170Z" style="stroke:#62626e;stroke-linejoin:round;stroke-width:12px;fill:none"></path></g></svg>
-                </button>
-                <button id="gmail">
-                    <svg width="20px" height="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#62626e" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"></path></g></svg>
-                </button>   
-                <button id="ifthenelse">
-                    <img src="img\ifthenelse.png" width="20px" height="20px">
-                </button>
-            </div>
-        </div>
-
-        <!--sezione principale del sito-->
-        <div class = "main-section">
-            <div class="main-picture">        </div>
-        <!--SECTION PROVVISORIA PERCHè NON HO UN BUON NUMERO DI CLIENTI SODDISFATTI, PROGETTI CONCLUSI ECC.-->
-            <div class = "main-text-banner">
-                <p class = "white-text">Soluzioni su misura</p>
-                <p class = "white-text">Progetti sempre in crescita</p>
-                <p class = "white-text">Clienti al centro di tutto</p>
-                <p class = "white-text">Sempre in aggiornamento </p>
-            </div>
-           
+         <!-- Sidebar -->
+         <div class = "sidebar" id = "sidebar">
+             <div class="sidebar-body">
+                 <div class = "profile">
+                     <div class = "pfp"></div>
+                     <div class = "profile_texts">
+                         <p class = "Title">Michele Latte</p>
+                         <p class = "Subtitle-text">Front-end Developer</p>
+                         <p class = "Subtitle-text">Web Design</p>
+                     </div>    
+                 </div>
+ 
+                 <div class = "personal_informations">
+                     <div class = "personal-box">
+                         <span class = "white-text">Stato:</span>
+                         <span class = "Subtitle-text">Italia</span>
+                     </div>
+                     <div class = "personal-box">
+                         <span class = "white-text">Città:</span>
+                         <span class = "Subtitle-text">Nuoro</span>
+                     </div>
+                     <div class = "personal-box">
+                         <span class = "white-text">Età:</span>
+                         <span class = "Subtitle-text">20</span>    
+                     </div>    
+                 </div>
+ 
+                 <hr class = "separè">
+                 <div class = "languages">
+                     <div class = "linguistic-knowledge">
+                         <div class = "circle-container">
+                             <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                                 <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                                 <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                             </svg>
+                             <div class = "circle-value">100%</div>
+                         </div>
+                         <div class = "white-text">Italiano</div>
+                     </div>
+                     <div class = "linguistic-knowledge">
+                         <div class = "circle-container">
+                             <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                                 <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                                 <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                             </svg>
+                             <div class = "circle-value">90%</div>
+                         </div>
+                         <div class = "white-text">Inglese</div>
+                     </div>
+                     <div class = "linguistic-knowledge">
+                         <div class = "circle-container">
+                             <svg class = "svg-container" width = "50" height = "50" viewBox = "0 0 50 50">
+                                 <circle class = "circle-void-part" r = "20" cx = "25" cy = "25"></circle>
+                                 <circle class = "circle-yellow-part" r = "20" cx = "25" cy = "25"></circle>
+                             </svg>
+                             <div class = "circle-value">50%</div>
+                         </div>
+                         <div class = "white-text">Spagnolo</div>
+                     </div>    
+                 </div>
+ 
+                 <hr class = "separè">
+                 <div class = "programming-knowledge">
+                     <div class = "programming-language-info">
+                         <span class = "white-text">html</span>
+                         <span class = "Subtitle-text">100%</span>
+                     </div>
+                     <div class="programming-progress-bar">
+                         <svg class="progress-bar" width="100%" height="3">
+                             <rect class="void-bar" width="100%" height="3"></rect>
+                             <rect class="yellow-bar" width="100%" height="3"></rect>
+                         </svg>
+                     </div>
+                     <div class = "programming-language-info">
+                         <span class = "white-text">CSS</span>
+                         <span class = "Subtitle-text">90%</span>
+                     </div>
+                     <div class="programming-progress-bar">
+                         <svg class="progress-bar" width="100%" height="3">
+                             <rect class="void-bar" width="100%" height="3"></rect>
+                             <rect class="yellow-bar" width="90%" height="3"></rect>
+                         </svg>
+                     </div>
+                     <div class = "programming-language-info">
+                         <span class = "white-text">Js</span>
+                         <span class = "Subtitle-text">70%</span>
+                     </div>
+                     <div class="programming-progress-bar">
+                         <svg class="progress-bar" width="100%" height="3">
+                             <rect class="void-bar" width="100%" height="3"></rect>
+                             <rect class="yellow-bar" width="70%" height="3"></rect>
+                         </svg>
+                     </div>
+                     <div class = "programming-language-info">
+                         <span class = "white-text">C++</span>
+                         <span class = "Subtitle-text">80%</span>
+                     </div>
+                     <div class="programming-progress-bar">
+                         <svg class="progress-bar" width="100%" height="3">
+                             <rect class="void-bar" width="100%" height="3"></rect>
+                             <rect class="yellow-bar" width="80%" height="3"></rect>
+                         </svg>
+                     </div>
+                     <div class = "programming-language-info">
+                         <span class = "white-text">PHP</span>
+                         <span class = "Subtitle-text">65%</span>
+                     </div>
+                     <div class="programming-progress-bar">
+                         <svg class="progress-bar" width="100%" height="3">
+                             <rect class="void-bar" width="100%" height="3"></rect>
+                             <rect class="yellow-bar" width="65%" height="3"></rect>
+                         </svg>
+                     </div>   
+                 </div>
+             </div>
+ 
+             <div class="sidebar-footer">
+                 <button id="instagram">
+                     <svg width="20px" height="20px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#62626e"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#62626e"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#62626e"></path> </g></svg>
+                 </button>
+                 <button id="gitHub">
+                     <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#62626e" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#62626e]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#62626e"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#62626e]"> </path> </g> </g> </g> </g></svg>
+                 </button>
+                 <button id="fiverr">
+                     <svg width="20px" height="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 0h192v192H0z" style="fill:none"></path><path d="M121.1 170h34.75V67.04H90.21v-7.72s0-9.01 9.01-9.01h21.88V22H99.22s-43.76 0-43.76 37.32v7.72h-19.3v28.31h19.3v74.64h34.75V95.36h30.89V170Z" style="stroke:#62626e;stroke-linejoin:round;stroke-width:12px;fill:none"></path></g></svg>
+                 </button>
+                 <button id="gmail">
+                     <svg width="20px" height="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#62626e" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"></path></g></svg>
+                 </button>   
+                 <button id="ifthenelse">
+                     <img src="img\ifthenelse.png" width="20px" height="20px">
+                 </button>
+             </div>
+         </div>
+ 
+         <!--sezione principale del sito-->
+         <div class = "main-section">
+             <div class="main-picture">        </div>
+         <!--SECTION PROVVISORIA PERCHè NON HO UN BUON NUMERO DI CLIENTI SODDISFATTI, PROGETTI CONCLUSI ECC.-->
+             <div class = "main-text-banner">
+                 <p class = "white-text">Soluzioni su misura</p>
+                 <p class = "white-text">Progetti sempre in crescita</p>
+                 <p class = "white-text">Clienti al centro di tutto</p>
+                 <p class = "white-text">Sempre in aggiornamento </p>
+             </div>
             
-
-            <div class="block-title">
-                <p class ="white-text">Chi Sono</p> 
-            </div>
-            <div class = "block-subtitle">
-                <p class = "Subtitle-text">Mi chiamo Michele, ho 20 anni e programmo da quando ne avevo 14. <br><br> Sono uno sviluppatore front-end professionista.<br><br>Nel 2025 ho co-fondato ifthenelse, una web agency specializzata nella creazione e nel restyling di siti web.</p>
-            </div>
-            
-        
-            <div class="block-title">
-                <p class ="white-text">I Miei Servizi </p> 
-            </div>
-            <div class="services">
-                <div class = "block-subtitle">
-                    <p class = "Subtitle-text">Creazione Sito</p>
-                    <p class = "Subtitle-text"><svg fill="#62626e" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480" xml:space="preserve" width="140px" height="140px" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M56,416c-30.872,0-56,25.128-56,56c0,4.424,3.576,8,8,8h96c4.424,0,8-3.576,8-8C112,441.128,86.872,416,56,416z M16.808,464C19.992,448.36,32.36,436.072,48,432.88V448h16v-15.12c15.64,3.2,28.008,15.48,31.192,31.12H16.808z"></path> </g> </g> <g> <g> <path d="M472,344h-14.032c-0.44-1.112-0.896-2.216-1.392-3.328l9.928-9.928c3.128-3.128,3.128-8.184,0-11.312l-33.936-33.936 c-1.656-1.656-3.84-2.376-6.008-2.272C439.24,276.496,448,263.32,448,248V40c0-22.056-17.944-40-40-40H40C17.944,0,0,17.944,0,40 v208c0,22.056,17.944,40,40,40h104.4l-30.224,56H112h-12c-15.44,0-28,12.56-28,28s12.56,28,28,28h172c0,4.424,3.576,8,8,8h14.032 c0.44,1.112,0.896,2.216,1.392,3.328l-9.928,9.928c-3.128,3.128-3.128,8.184,0,11.312l33.936,33.936 c3.128,3.128,8.184,3.128,11.312,0l9.928-9.928c1.112,0.496,2.216,0.952,3.328,1.392V472c0,4.424,3.576,8,8,8h48 c4.424,0,8-3.576,8-8v-14.032c1.112-0.44,2.216-0.896,3.328-1.392l9.928,9.928c3.128,3.128,8.184,3.128,11.312,0l33.936-33.936 c3.128-3.128,3.128-8.184,0-11.312l-9.928-9.928c0.496-1.112,0.952-2.216,1.392-3.328H472c4.424,0,8-3.576,8-8v-48 C480,347.576,476.424,344,472,344z M16,40c0-13.232,10.768-24,24-24h368c13.232,0,24,10.768,24,24v168H16V40z M40,272 c-13.232,0-24-10.768-24-24v-24h416v24c0,13.232-10.768,24-24,24h-8h-48h-61.808H157.808H40z M421.152,285.6l-9.824,9.824 c-1.112-0.496-2.216-0.952-3.328-1.392V288C412.632,288,417.008,287.056,421.152,285.6z M344,288v6.032 c-1.112,0.44-2.216,0.896-3.328,1.392L333.248,288H344z M316.92,288l-6.896,6.896L305.328,288H316.92z M272,384H100 c-6.616,0-12-5.384-12-12c0-6.616,5.384-12,12-12h12h6.944H272V384z M132.356,343.992L162.576,288h123.392l12.544,18.408 l-13.016,13.016c-3.128,3.128-3.128,8.184,0,11.312l9.928,9.928c-0.496,1.112-0.952,2.216-1.392,3.328H280H132.356z M464,392 h-11.672c-3.496,0-6.576,2.264-7.632,5.592c-1.216,3.864-2.856,7.8-4.88,11.672c-1.616,3.104-1.032,6.888,1.44,9.36l8.288,8.288 l-22.624,22.624l-8.288-8.288c-2.48-2.472-6.256-3.048-9.36-1.44c-3.872,2.024-7.808,3.664-11.672,4.88 c-3.336,1.064-5.6,4.144-5.6,7.64V464h-32v-11.672c0-3.496-2.264-6.576-5.592-7.632c-3.864-1.216-7.8-2.856-11.672-4.88 c-3.104-1.608-6.888-1.032-9.36,1.44l-8.288,8.288l-22.624-22.624l8.288-8.288c2.472-2.472,3.056-6.256,1.44-9.36 c-2.024-3.872-3.664-7.808-4.88-11.672c-1.064-3.336-4.144-5.6-7.64-5.6H288v-32h11.672c3.496,0,6.576-2.264,7.632-5.592 c1.216-3.864,2.856-7.8,4.88-11.672c1.616-3.104,1.032-6.888-1.44-9.36l-8.288-8.288l22.624-22.624l8.288,8.288 c2.472,2.48,6.256,3.056,9.36,1.44c3.872-2.024,7.808-3.664,11.672-4.88c3.336-1.064,5.6-4.144,5.6-7.64V288h32v11.672 c0,3.496,2.264,6.576,5.592,7.632c3.864,1.216,7.8,2.856,11.672,4.88c3.104,1.616,6.88,1.04,9.36-1.44l8.288-8.288l22.624,22.624 l-8.288,8.288c-2.472,2.472-3.056,6.256-1.44,9.36c2.024,3.872,3.664,7.808,4.88,11.672c1.064,3.336,4.144,5.6,7.64,5.6H464V392z"></path> </g> </g> <g> <g> <path d="M376,328c-26.472,0-48,21.528-48,48s21.528,48,48,48s48-21.528,48-48S402.472,328,376,328z M376,408 c-17.648,0-32-14.352-32-32s14.352-32,32-32s32,14.352,32,32S393.648,408,376,408z"></path> </g> </g> <g> <g> <path d="M157.656,61.656l-11.312-11.312l-56,56c-3.128,3.128-3.128,8.184,0,11.312l56,56l11.312-11.312L107.312,112 L157.656,61.656z"></path> </g> </g> <g> <g> <path d="M333.656,106.344l-56-56l-11.312,11.312L316.688,112l-50.344,50.344l11.312,11.312l56-56 C336.784,114.528,336.784,109.472,333.656,106.344z"></path> </g> </g> <g> <g> <rect x="131.509" y="96.019" transform="matrix(0.4472 -0.8944 0.8944 0.4472 24.1457 247.1068)" width="160.955" height="16"></rect> </g> </g> <g> <g> <rect x="312" y="160" width="16" height="16"></rect> </g> </g> <g> <g> <rect x="344" y="160" width="16" height="16"></rect> </g> </g> <g> <g> <rect x="376" y="160" width="16" height="16"></rect> </g> </g> </g></svg></p>
-                </div>
-                <div class = "block-subtitle">
-                    <p class = "Subtitle-text">Modifica Sito</p>
-                    <p class = "Subtitle-text"><svg fill="#62626e" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480" xml:space="preserve" width="140px" height="140px" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M56,416c-30.872,0-56,25.128-56,56c0,4.424,3.576,8,8,8h96c4.424,0,8-3.576,8-8C112,441.128,86.872,416,56,416z M16.808,464C19.992,448.36,32.36,436.072,48,432.88V448h16v-15.12c15.64,3.2,28.008,15.48,31.192,31.12H16.808z"></path> </g> </g> <g> <g> <path d="M472,344h-14.032c-0.44-1.112-0.896-2.216-1.392-3.328l9.928-9.928c3.128-3.128,3.128-8.184,0-11.312l-33.936-33.936 c-1.656-1.656-3.84-2.376-6.008-2.272C439.24,276.496,448,263.32,448,248V40c0-22.056-17.944-40-40-40H40C17.944,0,0,17.944,0,40 v208c0,22.056,17.944,40,40,40h104.4l-30.224,56H112h-12c-15.44,0-28,12.56-28,28s12.56,28,28,28h172c0,4.424,3.576,8,8,8h14.032 c0.44,1.112,0.896,2.216,1.392,3.328l-9.928,9.928c-3.128,3.128-3.128,8.184,0,11.312l33.936,33.936 c3.128,3.128,8.184,3.128,11.312,0l9.928-9.928c1.112,0.496,2.216,0.952,3.328,1.392V472c0,4.424,3.576,8,8,8h48 c4.424,0,8-3.576,8-8v-14.032c1.112-0.44,2.216-0.896,3.328-1.392l9.928,9.928c3.128,3.128,8.184,3.128,11.312,0l33.936-33.936 c3.128-3.128,3.128-8.184,0-11.312l-9.928-9.928c0.496-1.112,0.952-2.216,1.392-3.328H472c4.424,0,8-3.576,8-8v-48 C480,347.576,476.424,344,472,344z M16,40c0-13.232,10.768-24,24-24h368c13.232,0,24,10.768,24,24v168H16V40z M40,272 c-13.232,0-24-10.768-24-24v-24h416v24c0,13.232-10.768,24-24,24h-8h-48h-61.808H157.808H40z M421.152,285.6l-9.824,9.824 c-1.112-0.496-2.216-0.952-3.328-1.392V288C412.632,288,417.008,287.056,421.152,285.6z M344,288v6.032 c-1.112,0.44-2.216,0.896-3.328,1.392L333.248,288H344z M316.92,288l-6.896,6.896L305.328,288H316.92z M272,384H100 c-6.616,0-12-5.384-12-12c0-6.616,5.384-12,12-12h12h6.944H272V384z M132.356,343.992L162.576,288h123.392l12.544,18.408 l-13.016,13.016c-3.128,3.128-3.128,8.184,0,11.312l9.928,9.928c-0.496,1.112-0.952,2.216-1.392,3.328H280H132.356z M464,392 h-11.672c-3.496,0-6.576,2.264-7.632,5.592c-1.216,3.864-2.856,7.8-4.88,11.672c-1.616,3.104-1.032,6.888,1.44,9.36l8.288,8.288 l-22.624,22.624l-8.288-8.288c-2.48-2.472-6.256-3.048-9.36-1.44c-3.872,2.024-7.808,3.664-11.672,4.88 c-3.336,1.064-5.6,4.144-5.6,7.64V464h-32v-11.672c0-3.496-2.264-6.576-5.592-7.632c-3.864-1.216-7.8-2.856-11.672-4.88 c-3.104-1.608-6.888-1.032-9.36,1.44l-8.288,8.288l-22.624-22.624l8.288-8.288c2.472-2.472,3.056-6.256,1.44-9.36 c-2.024-3.872-3.664-7.808-4.88-11.672c-1.064-3.336-4.144-5.6-7.64-5.6H288v-32h11.672c3.496,0,6.576-2.264,7.632-5.592 c1.216-3.864,2.856-7.8,4.88-11.672c1.616-3.104,1.032-6.888-1.44-9.36l-8.288-8.288l22.624-22.624l8.288,8.288 c2.472,2.48,6.256,3.056,9.36,1.44c3.872-2.024,7.808-3.664,11.672-4.88c3.336-1.064,5.6-4.144,5.6-7.64V288h32v11.672 c0,3.496,2.264,6.576,5.592,7.632c3.864,1.216,7.8,2.856,11.672,4.88c3.104,1.616,6.88,1.04,9.36-1.44l8.288-8.288l22.624,22.624 l-8.288,8.288c-2.472,2.472-3.056,6.256-1.44,9.36c2.024,3.872,3.664,7.808,4.88,11.672c1.064,3.336,4.144,5.6,7.64,5.6H464V392z"></path> </g> </g> <g> <g> <path d="M376,328c-26.472,0-48,21.528-48,48s21.528,48,48,48s48-21.528,48-48S402.472,328,376,328z M376,408 c-17.648,0-32-14.352-32-32s14.352-32,32-32s32,14.352,32,32S393.648,408,376,408z"></path> </g> </g> <g> <g> <path d="M157.656,61.656l-11.312-11.312l-56,56c-3.128,3.128-3.128,8.184,0,11.312l56,56l11.312-11.312L107.312,112 L157.656,61.656z"></path> </g> </g> <g> <g> <path d="M333.656,106.344l-56-56l-11.312,11.312L316.688,112l-50.344,50.344l11.312,11.312l56-56 C336.784,114.528,336.784,109.472,333.656,106.344z"></path> </g> </g> <g> <g> <rect x="131.509" y="96.019" transform="matrix(0.4472 -0.8944 0.8944 0.4472 24.1457 247.1068)" width="160.955" height="16"></rect> </g> </g> <g> <g> <rect x="312" y="160" width="16" height="16"></rect> </g> </g> <g> <g> <rect x="344" y="160" width="16" height="16"></rect> </g> </g> <g> <g> <rect x="376" y="160" width="16" height="16"></rect> </g> </g> </g></svg></p>
-                </div>
-            </div>
-            <!--aggiungere progetti-->
-
-
-
-
-
-            <div class="appointment">    
-                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1efc6U1Bj19ImkWDgNvUO7arcrU5FN4aFaQwSe7t9esn5Y6b6I7U9T3omDlKkQeqW9-HiM5pQx?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>                
-            </div>
-        </div>
+             
+             
+             <div class="block-title">
+                 <p class ="white-text">Chi Sono</p> 
+             </div>
+             <div class="about-me">
+                 <div class = "block-subtitle">
+                     <p class = "Subtitle-text">Mi chiamo Michele, ho 20 anni e programmo da quando ne avevo 14. <br><br> Sono uno sviluppatore front-end professionista.<br><br>Nel 2025 ho co-fondato ifthenelse, una web agency specializzata nella creazione e nel restyling di siti web.</p>
+                 </div>
+             </div>
+                 
+             
+         
+             <div class="block-title">
+                 <p class ="white-text">I Miei Servizi </p> 
+             </div>
+             <div class="services">
+                 <div class = "block-subtitle">
+                     <p class = "Subtitle-text">Creazione Sito</p>
+                     <p class = "Subtitle-text"><svg width="50vh" height="40vh" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" fill="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;}.cls-2{fill:#62626e;}</style> </defs> <title></title> <g data-name="Layer 2" id="Layer_2"> <g id="Icons"> <g id="Development"> <rect class="cls-1" height="60" width="60"></rect> <circle class="cls-2" cx="9.33" cy="15.74" r="1"></circle> <circle class="cls-2" cx="16" cy="15.74" r="1"></circle> <circle class="cls-2" cx="12.67" cy="15.74" r="1"></circle> <path class="cls-2" d="M20,30.25l3-3a1,1,0,1,0-1.42-1.42l-3.72,3.73a1,1,0,0,0,0,1.41l3.72,3.73a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.41Z"></path> <path class="cls-2" d="M34.32,34.68a1,1,0,0,0,1.41,0L39.46,31a1,1,0,0,0,0-1.41l-3.73-3.73a1,1,0,0,0-1.41,1.42l3,3-3,3A1,1,0,0,0,34.32,34.68Z"></path> <path class="cls-2" d="M31,26.15a1,1,0,0,0-1.37.37L25.94,33a1,1,0,1,0,1.73,1l3.73-6.45A1,1,0,0,0,31,26.15Z"></path> <path class="cls-2" d="M55.86,40a.29.29,0,0,1-.27-.19,10.43,10.43,0,0,0-1.67-2.89.29.29,0,0,1,0-.33,2.3,2.3,0,0,0-.84-3.14L52.33,33V14.74a3,3,0,0,0-3-3H8a3,3,0,0,0-3,3V40.08a2.34,2.34,0,0,0,2.33,2.33H21l-1,3.7H18.67a4.33,4.33,0,0,0-4.21,3.33H12a1,1,0,0,0,0,2H37.47a2.12,2.12,0,0,0,.07.71,2.25,2.25,0,0,0,1.07,1.4l2.11,1.22a2.3,2.3,0,0,0,3.14-.85.31.31,0,0,1,.31-.14,9.74,9.74,0,0,0,3.32,0,.3.3,0,0,1,.31.15,2.3,2.3,0,0,0,2,1.14,2.27,2.27,0,0,0,1.15-.3l2.11-1.22a2.29,2.29,0,0,0,1.07-1.4,2.26,2.26,0,0,0-.23-1.74.3.3,0,0,1,0-.34,10.52,10.52,0,0,0,1.67-2.88.28.28,0,0,1,.27-.19,2.31,2.31,0,0,0,2.3-2.3V42.26A2.3,2.3,0,0,0,55.86,40ZM7,14.74a1,1,0,0,1,1-1H49.33a1,1,0,0,1,1,1v3H7Zm.33,25.67A.33.33,0,0,1,7,40.08V19.74H50.33V32A2.29,2.29,0,0,0,47.8,33h0a.29.29,0,0,1-.3.13,10.27,10.27,0,0,0-3.32,0,.28.28,0,0,1-.3-.13h0a2.29,2.29,0,0,0-3.14-.84l-2.11,1.22a2.24,2.24,0,0,0-1.07,1.39,2.32,2.32,0,0,0,.22,1.75.27.27,0,0,1,0,.33,10.43,10.43,0,0,0-1.67,2.89.29.29,0,0,1-.27.19,2.29,2.29,0,0,0-1.36.45ZM34,46.11H22l1-3.7H33.5V44.7A2.32,2.32,0,0,0,34,46.11Zm-15.32,2H36.48a11,11,0,0,0,.78,1.33H16.57A2.33,2.33,0,0,1,18.67,48.11ZM56.16,44.7a.3.3,0,0,1-.3.3,2.31,2.31,0,0,0-2.15,1.48,8.46,8.46,0,0,1-1.34,2.33,2.31,2.31,0,0,0-.21,2.6.26.26,0,0,1,0,.22.29.29,0,0,1-.14.19L49.94,53a.3.3,0,0,1-.41-.12,2.31,2.31,0,0,0-2.37-1.11,7.92,7.92,0,0,1-2.66,0,2.31,2.31,0,0,0-2.37,1.12.31.31,0,0,1-.41.11l-2.11-1.22a.29.29,0,0,1-.14-.19.26.26,0,0,1,0-.22,2.33,2.33,0,0,0-.21-2.6,8.35,8.35,0,0,1-1.35-2.33A2.28,2.28,0,0,0,35.8,45a.3.3,0,0,1-.3-.3V42.26a.29.29,0,0,1,.3-.3,2.3,2.3,0,0,0,2.14-1.48,8.21,8.21,0,0,1,1.35-2.33,2.33,2.33,0,0,0,.21-2.6.28.28,0,0,1,0-.23.26.26,0,0,1,.14-.18l2.11-1.22a.28.28,0,0,1,.15,0,.3.3,0,0,1,.25.14h0a2.32,2.32,0,0,0,2.37,1.12,7.92,7.92,0,0,1,2.66,0A2.33,2.33,0,0,0,49.53,34h0a.29.29,0,0,1,.4-.1l2.11,1.22a.26.26,0,0,1,.14.18.28.28,0,0,1,0,.23,2.3,2.3,0,0,0,.21,2.59,8.51,8.51,0,0,1,1.34,2.34A2.32,2.32,0,0,0,55.86,42a.29.29,0,0,1,.3.3Z"></path> <path class="cls-2" d="M45.83,38.94a4.54,4.54,0,1,0,4.54,4.54A4.54,4.54,0,0,0,45.83,38.94Zm0,7.08a2.54,2.54,0,1,1,2.54-2.54A2.54,2.54,0,0,1,45.83,46Z"></path> </g> </g> </g> </g></svg></p>
+                 </div>
+                 <div class = "block-subtitle">
+                     <p class = "Subtitle-text">Modifica Sito</p>
+                     <p class = "Subtitle-text"><svg width="50vh" height="40vh" fill="#62626e" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.997 399.997" xml:space="preserve" stroke="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M366.684,24.971H33.316C14.945,24.971,0,39.917,0,58.288V275.56c0,18.371,14.945,33.317,33.316,33.317h107.412 l-20.387,44.955c-2.105,4.643-1.709,10.037,1.053,14.321c2.762,4.285,7.51,6.873,12.607,6.873h131.996c0.006,0,0.014,0,0.02,0 c8.285,0,15-6.715,15-15c0-2.493-0.605-4.848-1.686-6.916l-20.062-44.233h107.412c18.371,0,33.316-14.946,33.316-33.317V58.288 C400,39.917,385.055,24.971,366.684,24.971z M370,275.561c0,1.829-1.488,3.316-3.316,3.316H33.316 c-1.828,0-3.316-1.487-3.316-3.316V58.288c0-1.829,1.488-3.317,3.316-3.317h333.367c1.828,0,3.316,1.488,3.316,3.317L370,275.561 L370,275.561z"></path> <path d="M246.198,96.434c-1.057-1.056-2.921-0.9-4.166,0.344l-16.273,16.271c-1.247,1.247-1.4,3.116-0.348,4.171l23.103,23.103 c0.525,0.526,1.261,0.751,2.013,0.688c0.756-0.063,1.53-0.413,2.157-1.038l16.271-16.272c1.244-1.245,1.4-3.111,0.343-4.166 L246.198,96.434z"></path> <path d="M146.336,197.582c-0.684-0.684-1.748-0.882-2.791-0.523c-1.042,0.359-1.902,1.226-2.257,2.271l-11.118,32.934 c-0.353,1.037-0.148,2.089,0.532,2.768c0.512,0.517,1.24,0.759,2.011,0.693c0.248-0.021,0.503-0.073,0.756-0.16l32.934-11.12 c1.044-0.354,1.912-1.215,2.27-2.256c0.362-1.041,0.162-2.107-0.521-2.792L146.336,197.582z"></path> <path d="M229.504,182.228c1.451-0.662,2.51-1.965,2.859-3.519c0.35-1.555-0.047-3.185-1.071-4.405 c-1.92-2.283-3.929-4.604-5.997-6.941l18.078-18.077c0.596-0.597,0.972-1.375,1.033-2.157c0.065-0.779-0.185-1.505-0.689-2.01 l-23.104-23.101c-1.056-1.058-2.92-0.903-4.166,0.344l-17.63,17.633c-11.824-11.209-23.699-21.209-34.165-28.732 c-7.369-5.296-20.85-14.199-28.355-14.313c-1.37-0.024-2.695,0.512-3.668,1.479c-0.976,0.966-1.519,2.285-1.508,3.657 c0.039,5.114,4.528,14.341,12.639,25.977c7.72,11.075,18.326,23.802,30.426,36.563l-23,23.002 c-1.248,1.247-1.403,3.111-0.346,4.166l23.103,23.101c0.525,0.531,1.254,0.755,2.011,0.691c0.752-0.063,1.533-0.414,2.155-1.035 l23.446-23.447c2.047,1.811,4.077,3.571,6.079,5.268c0.929,0.787,2.097,1.209,3.296,1.209c0.271,0,0.543-0.022,0.815-0.065 c1.471-0.239,2.765-1.109,3.539-2.383c1.368-2.248,3.15-4.479,5.301-6.626C223.281,185.806,226.284,183.693,229.504,182.228z"></path> <path d="M242.292,186.495c-5.938,0-11.606,2.531-16.396,7.32c-5.748,5.748-8.257,11.777-7.257,17.438 c0.993,5.604,5.446,10.627,12.22,13.771c5.827,2.707,11.138,3.546,15.821,4.287c4.932,0.778,9.585,1.516,13.726,4.325 c0.857,0.585,1.859,0.882,2.864,0.882c0.706,0,1.415-0.146,2.079-0.444c1.613-0.719,2.74-2.225,2.977-3.977 c1.775-13.241-0.765-25.133-7.152-33.476C256.245,190.186,249.363,186.495,242.292,186.495z"></path> </g> </g> </g> </g></svg></p>
+                 </div>
+             </div>
+             
+             <div class="block-title">
+                 <p class ="white-text">I Miei Progetti </p> 
+             </div>
+             <div class="projects">
+                 <div class="block-subtitle" onclick="window.location.href = 'https://ifthenelse.netlify.app/';">
+                     <div class="logo"><svg width="80px" height="80px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>project-new</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Combined-Shape" fill="#62626e" transform="translate(64.000000, 34.346667)"> <path d="M192,-7.10542736e-15 L384,110.851252 L384,242.986 L341.333,242.986 L341.333,157.655 L213.333,231.555 L213.333,431.088 L192,443.405007 L0,332.553755 L0,110.851252 L192,-7.10542736e-15 Z M341.333333,264.32 L341.333,328.32 L405.333333,328.32 L405.333333,370.986667 L341.333,370.986 L341.333333,434.986667 L298.666667,434.986667 L298.666,370.986 L234.666667,370.986667 L234.666667,328.32 L298.666,328.32 L298.666667,264.32 L341.333333,264.32 Z M42.666,157.654 L42.6666667,307.920144 L170.666,381.82 L170.666,231.555 L42.666,157.654 Z M192,49.267223 L66.1333333,121.936377 L192,194.605531 L317.866667,121.936377 L192,49.267223 Z"> </path> </g> </g> </g></svg></div>
+                     <div class="Subtitle-text">If Then Else website</div>
+                 </div>
+                 <div class="block-subtitle" onclick="window.location.href = 'https://alpistudio-test.netlify.app/';">
+                     <div class="logo"><svg width="80px" height="80px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#62626e"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>project-new</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Combined-Shape" fill="#62626e" transform="translate(64.000000, 34.346667)"> <path d="M192,-7.10542736e-15 L384,110.851252 L384,242.986 L341.333,242.986 L341.333,157.655 L213.333,231.555 L213.333,431.088 L192,443.405007 L0,332.553755 L0,110.851252 L192,-7.10542736e-15 Z M341.333333,264.32 L341.333,328.32 L405.333333,328.32 L405.333333,370.986667 L341.333,370.986 L341.333333,434.986667 L298.666667,434.986667 L298.666,370.986 L234.666667,370.986667 L234.666667,328.32 L298.666,328.32 L298.666667,264.32 L341.333333,264.32 Z M42.666,157.654 L42.6666667,307.920144 L170.666,381.82 L170.666,231.555 L42.666,157.654 Z M192,49.267223 L66.1333333,121.936377 L192,194.605531 L317.866667,121.936377 L192,49.267223 Z"> </path> </g> </g> </g></svg></div>
+                     <div class="Subtitle-text">Template mappa</div>
+                 </div>
+             </div>
+ 
+             <div class="block-title">
+                 <p class ="white-text">Prenota Una Chiamata </p> 
+             </div>
+             <div class="appointment">    
+                 <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1efc6U1Bj19ImkWDgNvUO7arcrU5FN4aFaQwSe7t9esn5Y6b6I7U9T3omDlKkQeqW9-HiM5pQx?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>                
+             </div>
+         </div>
     </body>
 </html>
 <script src = "script.js"></script>
