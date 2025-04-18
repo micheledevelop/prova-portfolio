@@ -331,6 +331,7 @@ button{
     background-color: #fff;
     padding-top: 20px;
     margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 25px;
 }
 
@@ -342,6 +343,7 @@ button{
 @media screen and (max-width: 600px) {
     /* Sidebar */
     .sidebar {
+      margin: 0;
       position: fixed;
       top: 0;
       left: 0;
@@ -399,6 +401,7 @@ button{
     .sidebar-footer,.sidebar-body{
         width: 100vw;
         margin-bottom: 0px;
+        padding-top: 10px;
     }
 
     
@@ -411,5 +414,22 @@ button{
     /* Reset margini contenuto principale */
     .content {
       margin-left: 0;
+    }
+    .main-section{
+        margin-left: 3vw !important;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column !important;
+        
+    }
+    .services .block-subtitle{
+        margin-left: 0px;
+        width: 84vw;
+    }
+
+    .main-text-banner{
+        display: none;
     }
   }
