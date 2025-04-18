@@ -340,61 +340,66 @@ button{
 
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {
-    /* Sidebar full screen */
+    /* Sidebar */
     .sidebar {
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #1a1a1a; /* sfondo sidebar */
-      color: white; /* testo visibile */
+      width: 100vw; /* occupa tutta la larghezza */
+      height: 100vh; /* occupa tutta l'altezza */
+      background-color: #1a1a1a; /* colore di sfondo */
+      color: white;
       z-index: 999;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; /* spinge il footer in basso */
-      overflow-y: auto; /* permette di scrollare se il contenuto è troppo */
-      padding: 20px;
-      box-sizing: border-box;
+      overflow: hidden;
     }
   
     .sidebar.active {
       transform: translateX(0);
     }
   
-    /* Contenuto interno della sidebar */
+    /* Contenuto dentro la sidebar */
     .sidebar .content {
       flex: 1;
-      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      width: 100%; /* forza adattamento orizzontale */
     }
   
-    /* Footer nella sidebar */
+    /* Footer della sidebar */
     .sidebar .footer {
-      width: 100%;
-      background-color: #333; /* o var(--footer-bg-color) */
+      background-color: #333;
       color: white;
       padding: 15px;
       text-align: center;
+      width: 100%; /* si adatta alla larghezza */
     }
   
-    /* Pulsante toggle */
-    .sidebar-toggle, .menu-toggle {
+    /* Pulsante apertura */
+    .menu-toggle {
       position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1050;
-      background: var(--giallo, #ffcc00);
+      top: 15px;
+      left: 15px;
+      background-color: var(--giallo, #ffcc00); /* fallback giallo se non definito */
       color: black;
       border: none;
       font-size: 20px;
       padding: 10px;
       cursor: pointer;
+      z-index: 2000; /* sopra sidebar */
     }
   
-    /* Blocca lo scroll del body sotto */
+    /* Disattiva scroll quando sidebar aperta */
     body.sidebar-open {
       overflow: hidden;
+    }
+  
+    /* Reset margini contenuto principale */
+    .content {
+      margin-left: 0;
     }
   }
