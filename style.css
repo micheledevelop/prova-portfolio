@@ -341,7 +341,7 @@ button{
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {
                 /* Impostazioni iniziali della sidebar */
-..sidebar {
+.sidebar {
     transform: translateX(-240px); /* La sidebar è nascosta inizialmente */
     width: 240px; /* Larghezza della sidebar */
     height: 100vh;
