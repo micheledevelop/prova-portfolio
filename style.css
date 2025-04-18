@@ -381,6 +381,7 @@ button{
   
     /* Pulsante apertura */
     .menu-toggle {
+        display: block;
       position: fixed;
       top: 15px;
       left: 15px;
