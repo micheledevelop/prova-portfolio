@@ -351,15 +351,49 @@
             }
             /* Design da Mobile*/
             @media screen and (max-width: 600px) {
-                .sidebar {
-                    transform: translateX(-240px);
-                    width: 200px;
-                    height: 100vh;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-                }
+            /* Impostazioni iniziali della sidebar */
+.sidebar {
+    transform: translateX(-240px); /* La sidebar è nascosta inizialmente */
+    width: 240px; /* Larghezza della sidebar */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Transizione per apertura/chiusura */
+    z-index: 1000; /* Deve stare sopra gli altri contenuti */
+}
+
+/* Quando la sidebar è aperta (a tutta larghezza) */
+.sidebar.open {
+    transform: translateX(0); /* La sidebar si sposta in posizione visibile */
+    width: 100vw; /* Larghezza 100% della finestra */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Ombra per evidenziare */
+}
+
+/* Fissiamo il footer in fondo allo schermo */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer-bg-color); /* Colore footer */
+    z-index: 1001; /* Deve stare sopra la sidebar */
+}
+
+/* Blocco lo scroll della pagina quando la sidebar è aperta */
+body.sidebar-open {
+    overflow: hidden; /* Disabilita lo scroll del body */
+}
+
+/* Blocco dello zoom sulla pagina (utile su dispositivi mobili) */
+meta[name="viewport"] {
+    content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"; /* Blocca lo zoom */
+}
+
+
+
+
+
 
                 .content {
                     margin-left: 0;
@@ -379,9 +413,7 @@
                     z-index: 100;
                 }
 
-                .sidebar.open {
-                    transform: translateX(0);
-                }
+               
             }
 
         </style>    
