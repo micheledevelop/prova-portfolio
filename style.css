@@ -340,62 +340,61 @@ button{
 
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {
-    /* Impostazioni iniziali della sidebar */
+    /* Sidebar full screen */
     .sidebar {
       transform: translateX(-100%);
       transition: transform 0.3s ease;
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw; /* <<< QUESTO FA LA DIFFERENZA */
-      height: 100vh; /* per coprire tutto lo schermo */
-      background-color: #1a1a1a;
+      width: 100vw;
+      height: 100vh;
+      background-color: #1a1a1a; /* sfondo sidebar */
+      color: white; /* testo visibile */
       z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* spinge il footer in basso */
+      overflow-y: auto; /* permette di scrollare se il contenuto è troppo */
+      padding: 20px;
+      box-sizing: border-box;
     }
   
     .sidebar.active {
       transform: translateX(0);
     }
   
-    .sidebar-toggle {
+    /* Contenuto interno della sidebar */
+    .sidebar .content {
+      flex: 1;
+      width: 100%;
+    }
+  
+    /* Footer nella sidebar */
+    .sidebar .footer {
+      width: 100%;
+      background-color: #333; /* o var(--footer-bg-color) */
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    /* Pulsante toggle */
+    .sidebar-toggle, .menu-toggle {
       position: fixed;
       top: 20px;
       left: 20px;
       z-index: 1050;
-      background: var(--button-bg-color);
-      color: var(--button-color);
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-  
-    .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: var(--footer-bg-color);
-      z-index: 1001;
-    }
-  
-    body.sidebar-open {
-      overflow: hidden;
-    }
-  
-    .content {
-      margin-left: 0;
-    }
-  
-    .menu-toggle {
-      display: block;
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      background-color: var(--giallo);
+      background: var(--giallo, #ffcc00);
       color: black;
       border: none;
       font-size: 20px;
       padding: 10px;
       cursor: pointer;
-      z-index: 100;
+    }
+  
+    /* Blocca lo scroll del body sotto */
+    body.sidebar-open {
+      overflow: hidden;
     }
   }
