@@ -347,7 +347,7 @@ button{
       left: 0;
       width: 100vw; /* occupa tutta la larghezza */
       height: 100vh; /* occupa tutta l'altezza */
-      background-color: #1a1a1a; /* colore di sfondo */
+      background-color: var(--colore_profilo);/* colore di sfondo */
       color: white;
       z-index: 999;
       transform: translateX(-100%);
@@ -355,6 +355,7 @@ button{
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      margin-bottom: 0px;
     }
   
     .sidebar.active {
@@ -377,6 +378,7 @@ button{
       padding: 15px;
       text-align: center;
       width: 100%; /* si adatta alla larghezza */
+      margin-bottom: 0px;
     }
   
     /* Pulsante apertura */
@@ -393,7 +395,14 @@ button{
       cursor: pointer;
       z-index: 2000; /* sopra sidebar */
     }
-  
+    
+    .sidebar-footer,.sidebar-body{
+        width: 100vw;
+        margin-bottom: 0px;
+    }
+
+    
+
     /* Disattiva scroll quando sidebar aperta */
     body.sidebar-open {
       overflow: hidden;
