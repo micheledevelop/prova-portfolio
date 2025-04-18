@@ -1,4 +1,6 @@
-
+function Sidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("active"); // toggle una classe che mostri/nasconda la sidebar
 document.querySelector('.sidebar-toggle').addEventListener('click', function() {
     const sidebar = document.querySelector('.sidebar');
     const body = document.body;
@@ -8,7 +10,7 @@ document.querySelector('.sidebar-toggle').addEventListener('click', function() {
     
     // Aggiungi o rimuovi la classe 'sidebar-open' al body per disabilitare lo scroll
     body.classList.toggle('sidebar-open');
-});
+});}
 
 //riempio i cerchi della sezione lingue della sidebar
 document.querySelectorAll( '.circle-yellow-part' ).forEach( ( circle, index ) => {
