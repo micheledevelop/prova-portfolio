@@ -248,10 +248,12 @@ button{
     background-color: var(--colore_profilo);
     width: 230px;
 }
-
+.sidebar-footer .button{
+    cursor: pointer;
+}
 .main-section{
     z-index: 1;
-    height: 98vh;
+    padding-bottom:20px;
     margin-left: 260px;
     margin-top: 6px;
     margin-right: 10px;
@@ -319,7 +321,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    cursor: pointer;
     margin-bottom: 25px;
 }
 
@@ -332,12 +334,9 @@ button{
     padding-top: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
+    padding-bottom: 20px;
     border-radius: 25px;
 }
-
-
-
-
 
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {
