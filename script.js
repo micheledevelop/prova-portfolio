@@ -1,7 +1,14 @@
-//bottone per far apparire la sidebar da mobile
-function Sidebar() {
-    document.getElementById("sidebar").classList.toggle("open");
-}
+
+document.querySelector('.sidebar-toggle').addEventListener('click', function() {
+    const sidebar = document.querySelector('.sidebar');
+    const body = document.body;
+
+    // Aggiungi o rimuovi la classe 'open' alla sidebar per aprirla/chiuderla
+    sidebar.classList.toggle('open');
+    
+    // Aggiungi o rimuovi la classe 'sidebar-open' al body per disabilitare lo scroll
+    body.classList.toggle('sidebar-open');
+});
 
 //riempio i cerchi della sezione lingue della sidebar
 document.querySelectorAll( '.circle-yellow-part' ).forEach( ( circle, index ) => {

@@ -341,7 +341,7 @@ button{
 /* Design da Mobile*/
 @media screen and (max-width: 600px) {
                 /* Impostazioni iniziali della sidebar */
-.sidebar {
+..sidebar {
     transform: translateX(-240px); /* La sidebar è nascosta inizialmente */
     width: 240px; /* Larghezza della sidebar */
     height: 100vh;
@@ -351,6 +351,7 @@ button{
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease; /* Transizione per apertura/chiusura */
     z-index: 1000; /* Deve stare sopra gli altri contenuti */
+    background-color: var(--sidebar-bg-color); /* Colore di sfondo della sidebar */
 }
 
 /* Quando la sidebar è aperta (a tutta larghezza) */
@@ -360,7 +361,20 @@ button{
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Ombra per evidenziare */
 }
 
-/* Fissiamo il footer in fondo allo schermo */
+/* Stile per il pulsante di apertura della sidebar */
+.sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1050; /* Deve stare sopra la sidebar */
+    background: var(--button-bg-color); /* Colore di sfondo del pulsante */
+    color: var(--button-color); /* Colore del testo del pulsante */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
 .footer {
     position: fixed;
     bottom: 0;
@@ -378,9 +392,6 @@ body.sidebar-open {
 meta[name="viewport"] {
     content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"; /* Blocca lo zoom */
 }
-
-
-
 
 
 
